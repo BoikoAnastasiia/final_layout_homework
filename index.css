@@ -1,4 +1,5 @@
 body,
+button,
 p,
 a {
   font-family: 'Open Sans', sans-serif;
@@ -12,7 +13,7 @@ a {
 /* Nav Styles */
 
 .nav_container {
-  padding: 28px 90px;
+  padding: 4px 90px;
   background: var(--main_color);
   display: flex;
   justify-content: space-between;
@@ -43,7 +44,6 @@ a {
 
 .dropdown_menu {
   position: relative;
-  color: white;
 }
 
 .dropdown_menu > ul {
@@ -53,12 +53,25 @@ a {
   min-width: 130px;
   border-radius: 6px;
   left: 0px;
-  top: 110%;
+  top: 80%;
   display: none;
   font-weight: 600;
+  box-shadow: #1f175c92 0 8px 6px;
+}
+
+.dropdown_menu button:after {
+  position: relative;
+  top: 11px;
+  right: -3px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid rgb(255, 255, 255);
 }
 .dropdown_menu > ul > li {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .dropdown_menu > ul > li:last-child {
@@ -67,29 +80,40 @@ a {
 
 .dropdown_menu > ul a {
   display: block;
-  padding: 10px 0;
+  padding: 15px 0;
   background-color: transparent;
-}
-
-.dropdown_menu > button {
-  padding: 10px 0;
-  background-color: transparent;
-  border: none;
-  font-family: var(--main_color);
-  font-size: 14px;
 }
 
 .dropdown_menu:hover > ul {
   display: block;
 }
 
-.nav_right_content ul a {
+.nav_right_content ul a,
+.nav_right_content button,
+.nav_right_content a {
   opacity: 0.8;
   font-size: 14px;
   color: white;
   text-decoration: none;
   font-weight: 600;
 }
-.nav_right_content ul a:hover {
+.nav_right_content *:hover {
   opacity: 1;
+}
+
+.dropdown_menu > button {
+  background-color: transparent;
+  border: none;
+  padding: 30px 12px;
+}
+
+.login_button {
+  border: 1px solid white;
+  padding: 10px 19px;
+  margin-left: 14px;
+  border-radius: 20px;
+}
+.login_button:hover {
+  background-color: white;
+  color: var(--main_color);
 }
