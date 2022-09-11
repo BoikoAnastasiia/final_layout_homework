@@ -215,12 +215,6 @@ h1 {
 
 /* Partners styles */
 
-.description {
-  padding-top: 48px;
-  text-align: center;
-  color: var(--secondary_text_color);
-}
-
 .partners {
   padding: 48px 90px;
 }
@@ -233,6 +227,12 @@ h1 {
 }
 
 /* Description styles */
+
+.description {
+  padding: 48px 90px;
+  text-align: center;
+  color: var(--secondary_text_color);
+}
 
 .description ul {
   display: flex;
@@ -251,13 +251,28 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+  padding: 0 17%;
+  line-height: 1.25;
 }
 
 .description p {
-  color: var(--tertiaryy_text_color);
+  color: var(--tertiary_text_color);
+  line-height: 1.6;
 }
 
 .description li {
   padding: 0 30px;
+}
+
+.description > ul > li img {
+  max-width: 200px;
+  margin-bottom: 40px;
+}
+
+.description > ul > li h4 {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Poppins', serif;
+  margin-bottom: 8px;
 }
