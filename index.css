@@ -5,6 +5,7 @@ a {
   font-family: 'Open Sans', sans-serif;
   color: white;
   transition: 250ms;
+  text-decoration: none;
 }
 
 * {
@@ -25,13 +26,16 @@ button {
   padding: 10px 19px;
 }
 
-nav,
 section,
 footer {
-  padding: 4px 90px;
+  padding: 48px 90px;
 }
 
 /* Nav Styles */
+
+nav {
+  padding: 4px 90px;
+}
 
 .nav_container {
   background: var(--main_color);
@@ -113,7 +117,6 @@ footer {
 .nav_right_content a {
   opacity: 0.8;
   font-size: 14px;
-  text-decoration: none;
   font-weight: 600;
 }
 .nav_right_content *:hover,
@@ -155,6 +158,7 @@ footer {
   left: 0;
   z-index: 1;
   pointer-events: none;
+  font-size: 0;
 }
 
 .right_header img {
@@ -215,10 +219,6 @@ h1 {
 
 /* Partners styles */
 
-.partners {
-  padding: 48px 90px;
-}
-
 .partners ul {
   display: flex;
   align-items: center;
@@ -229,7 +229,6 @@ h1 {
 /* Description styles */
 
 .description {
-  padding: 48px 90px;
   text-align: center;
   color: var(--secondary_text_color);
 }
@@ -239,14 +238,14 @@ h1 {
   color: var(--secondary_text_color);
 }
 
-.description h3 {
+.small_header {
   color: var(--main_color);
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
-.description h2 {
+.medium_header {
   color: var(--secondary_text_color);
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -275,4 +274,64 @@ h1 {
   font-size: 20px;
   font-family: 'Poppins', serif;
   margin-bottom: 8px;
+}
+
+/* Features styles */
+
+.features {
+  text-align: center;
+  background-color: #f5f6fb;
+  padding-top: 128px;
+  padding-bottom: 132px;
+}
+
+.features > p {
+  color: var(--tertiary_text_color);
+  font-size: 16px;
+  padding: 0 15%;
+  margin-bottom: 50px;
+  line-height: 1.625;
+}
+
+.features .medium_header {
+  margin-bottom: 12px;
+}
+
+.features ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features > ul > li {
+  padding: 8px 16px;
+  border-bottom: 2px solid #c9d9ec;
+}
+
+.features > ul > li:hover {
+  border-bottom: 2px solid var(--main_color);
+}
+
+.features > ul > li:hover a {
+  color: var(--main_color);
+}
+
+.features > ul > li > a {
+  color: #76838c;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.features > ul > li > a:before {
+  font: var(--fa-font-solid);
+  content: '\f03a';
+  margin-right: 10px;
+}
+
+.features > ul > li:nth-child(2) > a:before {
+  content: '\f86d';
+}
+
+.features > ul > li:nth-child(3) > a:before {
+  content: '\e473';
 }
