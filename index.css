@@ -7,6 +7,10 @@ a {
   transition: 250ms;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --main_color: #5f4dee;
   --main_font: 'Open Sans', sans-serif;
@@ -58,7 +62,7 @@ footer {
 
 .dropdown_menu {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .dropdown_menu > ul {
@@ -133,10 +137,21 @@ footer {
 /* Header styles */
 
 .main_header {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: var(--main_color);
   padding: 99px 90px;
+}
+
+.main_header:after {
+  content: url('./src/wave_partners.svg');
+  width: 100%;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .right_header img {
@@ -146,6 +161,7 @@ footer {
   transform: rotateZ(2deg);
   box-shadow: #1f175c92 0 8px 6px;
   border-radius: 13px;
+  z-index: 2;
 }
 
 h1 {
@@ -192,4 +208,17 @@ h1 {
 .left_header button:hover {
   background-color: white;
   color: var(--main_color);
+}
+
+/* Partners styles */
+
+.partners {
+  padding: 48px 90px;
+}
+
+.partners ul {
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  justify-content: space-between;
 }
