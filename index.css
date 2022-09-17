@@ -401,7 +401,7 @@ article .intro {
   line-height: 1.625;
 }
 
-article .small_btn {
+section .small_btn {
   background-color: var(--main_color);
   color: white;
   padding: 13px 36px;
@@ -488,4 +488,43 @@ article .small_btn {
 
 .pricing .medium_header {
   margin-bottom: 60px;
+}
+
+.pricing_list {
+  display: flex;
+  width: 100%;
+}
+
+.pricing_list > li {
+  width: calc(100% / 3 - 20px);
+  margin-right: 10px;
+  border-radius: 5%;
+  border: solid 2px #e4e7fc;
+  padding: 48px 18px;
+}
+
+.pricing_list > li:last-child {
+  margin-right: 0;
+}
+
+.pricing h5 {
+  color: #2b44ff;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.pricing h4 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.pricing h4:nth-child(2):before,
+.pricing h4:nth-child(3):before {
+  content: '$';
+  font-size: 22px;
+  font-weight: 400;
+  vertical-align: middle;
+  position: relative;
+  top: -7px;
+  margin-right: 1px;
 }
