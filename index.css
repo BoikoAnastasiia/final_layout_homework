@@ -352,6 +352,7 @@ h1 {
 
 .features article {
   display: flex;
+  align-items: start;
 }
 
 img[alt='features'] {
@@ -395,4 +396,12 @@ article .features_list {
 
 .features_list > .list_building > li {
   margin-bottom: 8px;
+  line-height: 1.625;
+}
+
+.features_list button[type='button'] {
+  background-color: var(--main_color);
+  color: white;
+  padding: 13px 36px;
+  font-size: 14px;
 }
