@@ -429,12 +429,16 @@ article .small_btn {
 
 .video {
   background-color: #f5f6fb;
+}
+
+.video_wrapper {
   position: relative;
+  margin: auto;
+  margin-bottom: 24px;
 }
 
 .video img {
-  display: block;
-  margin: auto;
+  width: 100%;
 }
 
 .video a[target='_blank'] {
@@ -467,12 +471,14 @@ article .small_btn {
   0% {
     box-shadow: 0 0 0 0 #5f4deeb3;
   }
-
   70% {
     box-shadow: 0 0 0 20px #5f4dee00;
   }
-
   100% {
     box-shadow: 0 0 0 0 #5f4dee00;
   }
+}
+
+.video > .intro {
+  text-align: center;
 }
