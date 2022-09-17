@@ -4,7 +4,7 @@ p,
 a {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  transition: 250ms;
+  transition: 300ms;
   text-decoration: none;
 }
 
@@ -407,6 +407,12 @@ section .small_btn {
   padding: 13px 36px;
   font-size: 14px;
   font-weight: 800;
+  border: 1px solid var(--main_color);
+}
+
+section .small_btn:hover {
+  background-color: white;
+  color: var(--main_color);
 }
 
 /* Details Styles */
@@ -498,7 +504,7 @@ section .small_btn {
 .pricing_list > li {
   width: calc(100% / 3 - 20px);
   margin-right: 10px;
-  border-radius: 5%;
+  border-radius: 3%;
   border: solid 2px #e4e7fc;
   padding: 48px 18px;
 }
@@ -516,6 +522,7 @@ section .small_btn {
 .pricing h4 {
   font-size: 52px;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .pricing h4:nth-child(2):before,
@@ -527,4 +534,23 @@ section .small_btn {
   position: relative;
   top: -7px;
   margin-right: 1px;
+}
+
+.pricing p {
+  color: var(--tertiary_text_color);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+hr {
+  border: solid 1px #e4e7fc;
+  margin-bottom: 32px;
+  opacity: 0.4;
+}
+
+.traits {
+  text-align-last: left;
+  color: var(--tertiary_text_color);
+  line-height: 2;
+  margin-bottom: 28px;
 }
