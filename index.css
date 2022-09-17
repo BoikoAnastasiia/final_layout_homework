@@ -479,6 +479,13 @@ article .small_btn {
   }
 }
 
-.video > .intro {
+/* Pricing Styles  */
+
+.pricing > * {
   text-align: center;
+  color: var(--secondary_text_color);
+}
+
+.pricing .medium_header {
+  margin-bottom: 60px;
 }
