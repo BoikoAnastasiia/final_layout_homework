@@ -346,7 +346,7 @@ h1 {
   content: '\e473';
 }
 
-.features article > div > * {
+section article > * {
   color: var(--tertiary_text_color);
 }
 
@@ -355,7 +355,8 @@ h1 {
   align-items: start;
 }
 
-img[alt='features'] {
+img[alt='features'],
+img[alt='details'] {
   width: 50%;
 }
 
@@ -365,13 +366,14 @@ article .features_list {
   color: var(--tertiary_text_color);
 }
 
-.features article .small_header {
+section article .small_header {
   color: #32373e;
+  line-height: 1.25;
   font-size: 28px;
   margin-bottom: 18px;
 }
 
-.features_list .intro {
+article .intro {
   text-align: left;
   padding: 0;
   margin-bottom: 16px;
@@ -382,11 +384,11 @@ article .features_list {
   text-decoration: underline;
 }
 
-.features_list > .list_building {
+.features_list > .list_square_dots {
   display: inline-block;
 }
 
-.features_list > .list_building li:before {
+.list_square_dots li:before {
   content: '\25A0';
   display: inline-block;
   width: 2px;
@@ -394,14 +396,83 @@ article .features_list {
   color: var(--main_color);
 }
 
-.features_list > .list_building > li {
+.list_square_dots > li {
   margin-bottom: 8px;
   line-height: 1.625;
 }
 
-.features_list button[type='button'] {
+article .small_btn {
   background-color: var(--main_color);
   color: white;
   padding: 13px 36px;
   font-size: 14px;
+  font-weight: 800;
+}
+
+/* Details Styles */
+
+.details {
+  display: flex;
+  align-items: start;
+  padding: 128px 90px 132px 90px;
+}
+
+.details article {
+  padding: 0 24px;
+}
+
+.details .list_square_dots {
+  margin-bottom: 24px;
+}
+
+/* Video Styles */
+
+.video {
+  background-color: #f5f6fb;
+  position: relative;
+}
+
+.video img {
+  display: block;
+  margin: auto;
+}
+
+.video a[target='_blank'] {
+  position: absolute;
+  padding: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--main_color);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.video a[target='_blank']:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 19px solid white;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #5f4deeb3;
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px #5f4dee00;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #5f4dee00;
+  }
 }
