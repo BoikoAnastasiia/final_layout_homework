@@ -641,7 +641,7 @@ hr {
 
 .form form {
   margin: auto;
-  width: 60%;
+  width: 64%;
 }
 
 .form label {
@@ -666,7 +666,7 @@ hr {
 }
 
 .form label {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .form input[type='checkbox'] {
@@ -689,3 +689,35 @@ hr {
 }
 
 /* Social Links Styles */
+
+.social ul {
+  display: flex;
+  margin: auto;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.social li {
+  border-radius: 50%;
+  padding: 20px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--main_color);
+  padding: 8px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.social a {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.social li:hover > * {
+  color: var(--main_color);
+}
+
+.social li:hover {
+  background-color: var(--background_light);
+}
