@@ -707,11 +707,13 @@ hr {
   color: white;
   text-align: center;
   font-size: 20px;
+  transition: 300ms;
 }
 
 .social a {
   vertical-align: middle;
   display: inline-block;
+  padding: 6px;
 }
 
 .social li:hover > * {
