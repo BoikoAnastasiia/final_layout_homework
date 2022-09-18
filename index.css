@@ -718,7 +718,6 @@ hr {
 }
 
 .social a {
-  vertical-align: middle;
   display: inline-block;
   padding: 6px;
 }
@@ -807,7 +806,6 @@ footer .copyright {
   width: 44px;
   height: 44px;
   padding: 0;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -823,7 +821,6 @@ footer .copyright {
 .footer_list .footer_social li > a {
   color: var(--main_color);
   text-align: center;
-  vertical-align: middle;
   display: inline-block;
   padding: 6px;
   line-height: 1.5;
@@ -847,7 +844,7 @@ footer .copyright {
   content: '';
   position: absolute;
   top: 42%;
-  left: 39%;
+  left: 38%;
   border: solid var(--background_light);
   border-width: 2px 0 0 2px;
   display: block;
