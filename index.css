@@ -17,6 +17,7 @@ a {
   --main_font: 'Open Sans', sans-serif;
   --secondary_text_color: #32373e;
   --tertiary_text_color: #5d636b;
+  --background_light: #f5f6fb;
 }
 
 button {
@@ -243,6 +244,7 @@ section .small_header {
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .medium_header {
@@ -251,8 +253,9 @@ section .small_header {
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 60px;
-  padding: 0 17%;
+  padding: 0 22%;
   line-height: 1.25;
+  text-align: center;
 }
 
 .description p {
@@ -280,7 +283,7 @@ section .small_header {
 
 .features {
   text-align: center;
-  background-color: #f5f6fb;
+  background-color: var(--background_light);
   padding-top: 128px;
   padding-bottom: 132px;
 }
@@ -366,11 +369,12 @@ article .features_list {
   color: var(--tertiary_text_color);
 }
 
-section article .small_header {
+.article_header {
   color: #32373e;
   line-height: 1.25;
   font-size: 28px;
   margin-bottom: 18px;
+  font-weight: 700;
 }
 
 article .intro {
@@ -434,7 +438,7 @@ section .small_btn:hover {
 /* Video Styles */
 
 .video {
-  background-color: #f5f6fb;
+  background-color: var(--background_light);
 }
 
 .video_wrapper {
@@ -573,6 +577,10 @@ hr {
 
 /* Team Styles */
 
+.team {
+  padding-bottom: 132px;
+}
+
 .team article {
   display: flex;
   padding: 0 70px;
@@ -622,3 +630,62 @@ hr {
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Form Styles */
+
+.form article {
+  background-color: var(--background_light);
+  padding: 64px 16px;
+  border-radius: 15px;
+}
+
+.form form {
+  margin: auto;
+  width: 60%;
+}
+
+.form label {
+  display: block;
+}
+
+.form input[type='email'] {
+  border-radius: 5px;
+  font-size: 18px;
+  width: 100%;
+  padding: 17px;
+  border: solid #ced4da 0.8px;
+}
+
+.form input:focus {
+  outline: 3px solid #5f4dee36;
+}
+
+.form input[type='email']::placeholder {
+  font-size: 15px;
+  text-align-last: left;
+}
+
+.form label {
+  margin-bottom: 20px;
+}
+
+.form input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.form label a {
+  color: var(--tertiary_text_color);
+  text-decoration: underline;
+}
+
+.form label a:hover {
+  color: var(--main_color);
+}
+
+.form button {
+  width: 100%;
+  padding: 20px 36px;
+  font-weight: 600;
+}
+
+/* Social Links Styles */
